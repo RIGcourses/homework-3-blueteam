@@ -1,7 +1,7 @@
 /* 
  * CS:APP Data Lab 
  * 
- * <Please put your name and userid here>
+ * Keegan Gallagher kgallagher6@luc.edu
  * 
  * bits.c - Source file with your solutions to the Lab.
  *          This is the file you will hand in to your instructor.
@@ -193,7 +193,7 @@ int bitXor(int x, int y) {
  *   Rating: 1
  */
 int tmax(void) {
-  return 2;
+  return ~(1 << 31);
 }
 /* 
  * isNotEqual - return 0 if x == y, and 1 otherwise 
@@ -203,7 +203,7 @@ int tmax(void) {
  *   Rating: 2
  */
 int isNotEqual(int x, int y) {
-  return 2;
+  return !!(x ^ y);
 }
 /* 
  * copyLSB - set all bits of result to least significant bit of x
