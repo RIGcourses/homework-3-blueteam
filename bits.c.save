@@ -184,7 +184,7 @@ int bitNor(int x, int y) {
  *   Rating: 1
  */
 int bitXor(int x, int y) {
-  return ~(~(x & ~y) & ~(~x & y));
+  return 2;
 }
 /* 
  * TMax - return maximum two's complement integer 
@@ -234,5 +234,5 @@ int rotateRight(int x, int n) {
  *   Rating: 3
  */
 int isNonNegative(int x) {
-  return (x >> 31) + 1;
+  return 2;
 }
