@@ -213,7 +213,7 @@ int isNotEqual(int x, int y) {
  *   Rating: 2
  */
 int copyLSB(int x) {
-  return 2;
+  return (x<<31) >> 31;
 }
 /* 
  * rotateRight - Rotate x to the right by n
@@ -224,7 +224,15 @@ int copyLSB(int x) {
  *   Rating: 3 
  */
 int rotateRight(int x, int n) {
-  return 2;
+  if (!n) return x;
+  int size = 32;
+  int bin_num = (1 << n) + (~0);
+  int low = x & bin_num;
+  int n_shift = size + (~n +1);
+  int left = low << n_shift;
+  int right_shift = ~((~0) << n_shift);
+  int right = (x >> n) & right_shift;
+  return left | right;
 }
 /* 
  * isNonNegative - return 1 if x >= 0, return 0 otherwise 
