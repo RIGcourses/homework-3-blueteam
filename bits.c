@@ -3,6 +3,7 @@
  * 
  * Keegan Gallagher kgallagher6@luc.edu
  * Kaelen Bober kbober1@luc.edu
+ * Arman akamal@luc.edu
  * bits.c - Source file with your solutions to the Lab.
  *          This is the file you will hand in to your instructor.
  *
