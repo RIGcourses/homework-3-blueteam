@@ -2,8 +2,7 @@
  * CS:APP Data Lab 
  * 
  * Keegan Gallagher kgallagher6@luc.edu
- * Kaelen Bober kbober1@luc.edu
- * Arman akamal@luc.edu
+ * 
  * bits.c - Source file with your solutions to the Lab.
  *          This is the file you will hand in to your instructor.
  *
@@ -185,7 +184,7 @@ int bitNor(int x, int y) {
  *   Rating: 1
  */
 int bitXor(int x, int y) {
-  return ~(~(x & ~y) & ~(~x & y));
+  return 2;
 }
 /* 
  * TMax - return maximum two's complement integer 
@@ -214,7 +213,7 @@ int isNotEqual(int x, int y) {
  *   Rating: 2
  */
 int copyLSB(int x) {
-  return (x<<31) >> 31;
+  return 2;
 }
 /* 
  * rotateRight - Rotate x to the right by n
@@ -225,15 +224,7 @@ int copyLSB(int x) {
  *   Rating: 3 
  */
 int rotateRight(int x, int n) {
-  if (!n) return x;
-  int size = 32;
-  int bin_num = (1 << n) + (~0);
-  int low = x & bin_num;
-  int n_shift = size + (~n +1);
-  int left = low << n_shift;
-  int right_shift = ~((~0) << n_shift);
-  int right = (x >> n) & right_shift;
-  return left | right;
+  return 2;
 }
 /* 
  * isNonNegative - return 1 if x >= 0, return 0 otherwise 
@@ -243,5 +234,5 @@ int rotateRight(int x, int n) {
  *   Rating: 3
  */
 int isNonNegative(int x) {
-  return (x >> 31) + 1;
+  return 2;
 }
